@@ -21,6 +21,7 @@ if ($_GET){
     $username = "".$user['NAMA_USER'];
     $rule = "".$user['RULE_USER'];
     $regID = "".$user['REG_ID'];
+    $key = "".$user['KEY_ENCRYPT'];
 
     if ($num > 0) {
         $response["error"] = false;
@@ -29,6 +30,7 @@ if ($_GET){
         $response["username"] = $username;
         $response["rule"] = $rule;
         $response["regID"] = $regID;
+        $response["key"] = $key;
         echo json_encode($response);
     } else{
         $response["error"] = false;

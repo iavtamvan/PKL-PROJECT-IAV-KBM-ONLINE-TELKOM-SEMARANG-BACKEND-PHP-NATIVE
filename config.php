@@ -2,7 +2,7 @@
 
 $server = "localhost";
 $user = "root";
-$password = "12345678";
+$password = "1234567890";
 $nama_database = "kbm_online";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
